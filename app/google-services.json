@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "16044888929",
+    "project_id": "quickbyte-8c496",
+    "storage_bucket": "quickbyte-8c496.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16044888929:android:b9dbb99254c275e0162b20",
+        "android_client_info": {
+          "package_name": "com.example.quickbyte"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASFvdwsH2-jQYTGypYP_e0yP339rb-oD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
