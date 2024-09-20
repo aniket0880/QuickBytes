@@ -16,7 +16,10 @@ class StartActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
-        binding.button.setOnClickListener { val intent= Intent(this,LoginActivity::class.java)
+        binding.loginbtn.setOnClickListener { val intent= Intent(this,LoginActivity::class.java)
         startActivity(intent)}
+
+        binding.signupbtn.setOnClickListener { val intent= Intent(this,SignupActivity::class.java)
+            startActivity(intent)}
     }
 }
