@@ -109,11 +109,8 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    private fun updateUi(user: FirebaseUser?){
-        startActivity(Intent(this,MainActivity::class.java))
-        finish()
 
-    }
+    // launcher pop up for google sign in
     private val launcher=registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
         result->
         if(result.resultCode== Activity.RESULT_OK){
@@ -133,5 +130,20 @@ class LoginActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+    //check if user is already logged in
+    //override fun onStart(){
+     //   super.onStart()
+   //     val currentUuser=auth.currentUser
+     //   if(currentUuser!=null){
+       //     startActivity(Intent(this,MainActivity::class.java))
+      //      finish()
+     //   }
+   // }
+    //function to sent us to main activicty
+    private fun updateUi(user: FirebaseUser?){
+        startActivity(Intent(this,MainActivity::class.java))
+        finish()
+
     }
 }
